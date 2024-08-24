@@ -13,15 +13,14 @@
     </properties>
     
     <dependencies>
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>5.7.0</version>
-        <scope>test</scope>
-    </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
-    
     <build>
         <plugins>
             <plugin>
@@ -30,6 +29,9 @@
                 <version>2.22.2</version>
                 <configuration>
                     <failIfNoTests>true</failIfNoTests>
+                    <printSummary>true</printSummary>
+                    <useFile>false</useFile>
+                    <trimStackTrace>false</trimStackTrace>
                 </configuration>
             </plugin>
             <plugin>
